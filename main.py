@@ -1,8 +1,9 @@
+"""Module using finite state machine model for life simulation"""
 import random
 
 
 def decor(fn):
-    """Decorator for """
+    """Decorator for coroutines"""
     def wrapper(*args, **kwargs):
         v = fn(*args, **kwargs)
         v.send(None)
